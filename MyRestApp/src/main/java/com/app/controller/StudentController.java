@@ -30,9 +30,6 @@ public class StudentController {
 		return studentService.addStudent(student);
 	}
 	
-	
-	
-	
 //	@PostMapping("/bulkAdd")
 //	public String addStudents(@RequestBody List<Student> students) {
 //		//service class method
@@ -66,8 +63,5 @@ public class StudentController {
 			
 			ResponseEntity<Student> re = new ResponseEntity<>(empRespo, HttpStatus.OK);
 			return re;
-			
-		}
-	
-	
+		}	
 }
