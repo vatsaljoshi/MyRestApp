@@ -24,6 +24,7 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 	
+	//CREATE A STUDENT
 	@PostMapping("/add")
 	public String addStudent(@RequestBody Student student) {
 		//service class method
@@ -48,6 +49,7 @@ public class StudentController {
 		return studentService.updateStudent(student);
 	}
 	
+	//READ A STUDENT
 	@RequestMapping("/all/{roll}")
 	public Optional<Student> getStudent(@PathVariable int roll) {
 		return studentService.getStudent(roll);
